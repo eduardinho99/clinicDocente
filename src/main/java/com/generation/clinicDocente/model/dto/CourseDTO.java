@@ -11,6 +11,7 @@ public class CourseDTO
 	LocalDate date;
 	double cost;
 	int doctorId;
+	String doctor;
 	
 	public CourseDTO () {};
 	
@@ -21,6 +22,7 @@ public class CourseDTO
 		this.date = course.getDate();
 		this.cost = course.getCost();
 		this.doctorId = course.getDoctor().getId();
+		this.doctor = course.getDoctor().getName() + " " + course.getDoctor().getSurname();
 	}
 
 	public int getId() {
@@ -61,6 +63,14 @@ public class CourseDTO
 
 	public void setDoctorId(int doctorId) {
 		this.doctorId = doctorId;
+	}
+
+	public String getDoctor() {
+		return doctor;
+	}
+
+	public void setDoctor(String doctor) {
+		this.doctor = doctor;
 	}
 	
 	

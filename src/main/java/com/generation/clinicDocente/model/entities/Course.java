@@ -21,7 +21,7 @@ public class Course
 	@ManyToOne
 	Doctor doctor;
 	
-	Course() {};
+	public Course() {};
 
 	public int getId() {
 		return id;

@@ -68,6 +68,16 @@ public class Doctor
 	public void setVaccinations(List<Vaccination> vaccinations) {
 		this.vaccinations = vaccinations;
 	}
+
+
+	public List<Course> getCourses() {
+		return courses;
+	}
+
+
+	public void setCourses(List<Course> courses) {
+		this.courses = courses;
+	}
 	
 	
 	
