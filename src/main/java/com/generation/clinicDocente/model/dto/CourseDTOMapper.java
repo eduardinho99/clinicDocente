@@ -34,7 +34,7 @@ public class CourseDTOMapper
 	
 	public Course fromDTO(CourseDTO dto)
 	{
-		if(dto.getDoctorId() >= 0)
+		if(dto.getId() > 0)
 		{
 			throw new RuntimeException("Doctor id is not valid");
 		}
